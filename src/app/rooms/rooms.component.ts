@@ -24,41 +24,41 @@ export class RoomsComponent implements OnInit {
     totalRooms: 20
   }
 
-  roomList: RoomList[] = [
-    {
-      roomNumber: 1,
-      roomType: 'Standard',
-      amenities: 'WiFi, TV, Air Conditioning',
-      price: 100,
-      photos: 'standard_room.jpg',
-      checkinTime: new Date('2024-02-25T15:00:00Z'),
-      rating : 3.523423
-    },
-    {
-      roomNumber: 2,
-      roomType: 'Deluxe',
-      amenities: 'WiFi, TV, Air Conditioning, Mini Bar, Jacuzzi',
-      price: 200,
-      photos: 'deluxe_room.jpg',
-      checkinTime: new Date('2024-02-25T14:00:00Z'),
-      rating : 2.5234234
-    },
-    {
-      roomNumber: 3,
-      roomType: 'Suite',
-      amenities: 'WiFi, TV, Air Conditioning, Mini Bar, Jacuzzi, Private Terrace',
-      price: 300,
-      photos: 'suite_room.jpg',
-      checkinTime: new Date('2024-02-25T13:00:00Z'),
-      rating : 4
-    },
-    // Add more rooms as needed
-  ];
+  roomList: RoomList[] = [ ];
 
 
   constructor() { }
 
   ngOnInit(): void {
+    this.roomList = [
+      {
+        roomNumber: 1,
+        roomType: 'Standard',
+        amenities: 'WiFi, TV, Air Conditioning',
+        price: 100,
+        photos: 'standard_room.jpg',
+        checkinTime: new Date('2024-02-25T15:00:00Z'),
+        rating : 3.523423
+      },
+      {
+        roomNumber: 2,
+        roomType: 'Deluxe',
+        amenities: 'WiFi, TV, Air Conditioning, Mini Bar, Jacuzzi',
+        price: 200,
+        photos: 'deluxe_room.jpg',
+        checkinTime: new Date('2024-02-25T14:00:00Z'),
+        rating : 2.5234234
+      },
+      {
+        roomNumber: 3,
+        roomType: 'Suite',
+        amenities: 'WiFi, TV, Air Conditioning, Mini Bar, Jacuzzi, Private Terrace',
+        price: 300,
+        photos: 'suite_room.jpg',
+        checkinTime: new Date('2024-02-25T13:00:00Z'),
+        rating : 4
+      },
+    ]
   }
 
 }
